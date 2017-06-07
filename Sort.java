@@ -6,12 +6,23 @@ public class Sort {
         System.out.println("You need implement the method!");
     }
 
+    public void sort(int[] a){
+
+    }
+
     public static boolean less(Comparable v, Comparable w){
         return v.compareTo(w) < 0;
     }
-    public static void exch(Comparable[] a, int i, int j){
 
+    public static void exch(Comparable[] a, int i, int j){
         Comparable t = a[i];
+        a[i] = a[j];
+        a[j] = t;
+    }
+
+    public void swap(int[] a, int i, int j){
+
+        int t = a[i];
         a[i] = a[j];
         a[j] = t;
     }
